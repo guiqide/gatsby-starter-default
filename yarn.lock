@@ -6445,6 +6445,14 @@
     "globby" "^11.0.2"
     "lodash" "^4.17.21"
 
+"gatsby-plugin-postcss@^4.3.0":
+  "integrity" "sha512-T0OaJiziOs7LL1S5iI+QQzY8TOzL2y6rmWQKstPnr0NuDueQrN4YDRnG4fPoBhJ1Xl96uCVNZ4QoyGvqDQwjXw=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-postcss/-/gatsby-plugin-postcss-4.3.0.tgz"
+  "version" "4.3.0"
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "postcss-loader" "^4.1.0"
+
 "gatsby-plugin-react-helmet@^4.2.0":
   "integrity" "sha512-EF9GsIgDpO3qVTMDXzzm9h3G10tNiejp3MfIrSgSE66NGLY/GR8aEsENsOWrjHsHMOs7AaC1eOXbNQ0aJt3Otg=="
   "resolved" "https://registry.npmjs.org/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-4.2.0.tgz"
@@ -10921,6 +10929,17 @@
   "resolved" "https://registry.npmjs.org/postcss-flexbugs-fixes/-/postcss-flexbugs-fixes-5.0.2.tgz"
   "version" "5.0.2"
 
+"postcss-loader@^4.1.0":
+  "integrity" "sha512-mqgScxHqbiz1yxbnNcPdKYo/6aVt+XExURmEbQlviFVWogDbM4AJ0A/B+ZBpYsJrTRxKw7HyRazg9x0Q9SWwLA=="
+  "resolved" "https://registry.npmjs.org/postcss-loader/-/postcss-loader-4.2.0.tgz"
+  "version" "4.2.0"
+  dependencies:
+    "cosmiconfig" "^7.0.0"
+    "klona" "^2.0.4"
+    "loader-utils" "^2.0.0"
+    "schema-utils" "^3.0.0"
+    "semver" "^7.3.4"
+
 "postcss-loader@^5.0.0":
   "integrity" "sha512-uSuCkENFeUaOYsKrXm0eNNgVIxc71z8RcckLMbVw473rGojFnrUeqEz6zBgXsH2q1EIzXnO/4pEz9RhALjlITA=="
   "resolved" "https://registry.npmjs.org/postcss-loader/-/postcss-loader-5.2.0.tgz"
@@ -11175,6 +11194,15 @@
   "resolved" "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-4.1.0.tgz"
   "version" "4.1.0"
 
+"postcss@^7.0.0 || ^8.0.1", "postcss@^8.0.5", "postcss@^8.2.6", "postcss@8.2.6":
+  "integrity" "sha512-xpB8qYxgPuly166AGlpRjUdEYtmOWx2iCwGmrv4vqZL9YPVviDVPZPRXxnXr6xPZOdxQ9lp3ZBFCRgWJ7LE3Sg=="
+  "resolved" "https://registry.npmjs.org/postcss/-/postcss-8.2.6.tgz"
+  "version" "8.2.6"
+  dependencies:
+    "colorette" "^1.2.1"
+    "nanoid" "^3.1.20"
+    "source-map" "^0.6.1"
+
 "postcss@^7.0.0":
   "integrity" "sha512-3QT8bBJeX/S5zKTTjTCIjRF3If4avAT6kqxcASlTWEtAFCb9NH0OUxNDfgZSWdP5fJnBYCMEWkIFfWeugjzYMg=="
   "resolved" "https://registry.npmjs.org/postcss/-/postcss-7.0.35.tgz"
@@ -11209,15 +11237,6 @@
   dependencies:
     "colorette" "^1.2.2"
     "nanoid" "^3.1.22"
-    "source-map" "^0.6.1"
-
-"postcss@8.2.6":
-  "integrity" "sha512-xpB8qYxgPuly166AGlpRjUdEYtmOWx2iCwGmrv4vqZL9YPVviDVPZPRXxnXr6xPZOdxQ9lp3ZBFCRgWJ7LE3Sg=="
-  "resolved" "https://registry.npmjs.org/postcss/-/postcss-8.2.6.tgz"
-  "version" "8.2.6"
-  dependencies:
-    "colorette" "^1.2.1"
-    "nanoid" "^3.1.20"
     "source-map" "^0.6.1"
 
 "potrace@^2.1.8":
@@ -14509,7 +14528,7 @@
   dependencies:
     "debug" "^3.0.0"
 
-"webpack@^5.28.0":
+"webpack@^4.0.0 || ^5.0.0", "webpack@^5.28.0":
   "integrity" "sha512-+WiFMgaZqhu7zKN64LQ7z0Ml4WWI+9RwG6zmS0wJDQXiCeg3hpN8fYFNJ+6WlosDT55yVxTfK7XHUAOVR4rLyA=="
   "resolved" "https://registry.npmjs.org/webpack/-/webpack-5.34.0.tgz"
   "version" "5.34.0"

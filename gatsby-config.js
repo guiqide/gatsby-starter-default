@@ -9,20 +9,21 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: "G-BRV2W20WEY",
+        trackingId: "G-NTKEDE94VP",
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: `${__dirname}/blogs/`,
+        path: `${__dirname}/docs/`,
       },
     },
+    `gatsby-plugin-postcss`,
     {
       resolve: "gatsby-plugin-page-creator",
       options: {
-        path: `${__dirname}/blogs`,
+        path: `${__dirname}/docs`,
       },
     },
     `gatsby-plugin-mdx`,
