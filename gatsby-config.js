@@ -5,6 +5,15 @@ module.exports = {
     author: `@gavin`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-eslint',
+      options: {
+        stages: ['develop'],
+        extensions: ['ts', 'tsx'],
+        exclude: ['node_modules', '.cache', 'public'],
+        // Any eslint-webpack-plugin options below
+      }
+    },
     "gatsby-plugin-styled-components",
     {
       resolve: "gatsby-plugin-google-analytics",
