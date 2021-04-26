@@ -1,10 +1,31 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `gavin's blog`,
+    description: `mdx blog with gatsby`,
+    author: `@gavin`,
   },
   plugins: [
+    "gatsby-plugin-styled-components",
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "G-BRV2W20WEY",
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/blogs/`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/blogs`,
+      },
+    },
+    `gatsby-plugin-mdx`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
