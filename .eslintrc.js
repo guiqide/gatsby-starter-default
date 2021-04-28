@@ -14,6 +14,7 @@ module.exports = {
     },
   },
   rules: {
+    'global-require': 0,
     '@typescript-eslint/no-use-before-define': 'off',
     'no-use-before-define': 'off',
     'jsx-quotes': ['error', 'prefer-double'],

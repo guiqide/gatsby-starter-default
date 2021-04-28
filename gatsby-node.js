@@ -18,15 +18,5 @@ exports.createPages = async function ({ actions, graphql }) {
       }
     }
   `);
-  console.log(res);
-  if (res.data) {
-    res.data.allMarkdownRemark.forEach((node) => {
-      const { slug } = node.fields;
-      actions.createPage({
-        path: slug,
-        component: require.resolve('./src/templates/blog-post.js'),
-        context: { slug },
-      });
-    });
-  }
+  console.log(JSON.stringify(res));
 };
