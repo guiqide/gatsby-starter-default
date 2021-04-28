@@ -33,14 +33,14 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'pages',
-        path: `${__dirname}/docs/`,
+        path: `${__dirname}/src/blogs/`,
       },
     },
     'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-plugin-page-creator',
       options: {
-        path: `${__dirname}/docs`,
+        path: `${__dirname}/src/blogs/`,
       },
     },
     'gatsby-plugin-mdx',
@@ -68,6 +68,19 @@ module.exports = {
       },
     },
     'gatsby-plugin-gatsby-cloud',
+    {
+      resolve: 'gatsby-remark-video',
+      options: {
+        width: 800,
+        height: 'auto',
+        preload: 'auto',
+        muted: true,
+        autoplay: true,
+        playsinline: true,
+        controls: true,
+        loop: true,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
