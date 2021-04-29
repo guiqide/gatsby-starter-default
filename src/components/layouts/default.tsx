@@ -16,7 +16,7 @@ import './layout.css';
 interface LayoutProp {
   children: ReactNode
 }
-const Layout = ({ children }: LayoutProp) => {
+const DefaultLayout = ({ children }: LayoutProp) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -55,8 +55,8 @@ const Layout = ({ children }: LayoutProp) => {
   );
 };
 
-Layout.propTypes = {
+DefaultLayout.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default Layout;
+export default DefaultLayout;

@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { Link, PageProps, graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 
-import { Layout, Seo, BlogList } from '@/components';
+import { DefaultLayout, Seo, BlogList } from '@/components';
 
 interface IEdge {
   node: {
@@ -24,7 +24,7 @@ const IndexPage: FC<IndexProps> = ({ data }: IndexProps) => {
   console.log(data?.allFile?.edges);
 
   return (
-    <Layout>
+    <DefaultLayout>
       <Seo title="首页" />
       <h1>11Hi people</h1>
       <p>Welcome to your new Gatsby site.</p>
@@ -44,7 +44,7 @@ const IndexPage: FC<IndexProps> = ({ data }: IndexProps) => {
       <section>
         <BlogList list={data?.allFile?.edges} />
       </section>
-    </Layout>
+    </DefaultLayout>
   );
 };
 

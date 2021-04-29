@@ -40,14 +40,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'pages',
+        name: 'posts',
         path: `${__dirname}/src/blogs/`,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-postcss',
-      options: {
-        postCssPlugins: [require('postcss-preset-env')({ stage: 0 })],
       },
     },
     {
@@ -56,8 +50,21 @@ module.exports = {
         path: `${__dirname}/src/blogs/`,
       },
     },
-    'gatsby-plugin-mdx',
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        defaultLayouts: {
+          posts: require.resolve('./src/components/layouts/posts-layout.tsx'),
+          default: require.resolve('./src/components/layouts/default.tsx'),
+        },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-postcss',
+      options: {
+        postCssPlugins: [require('postcss-preset-env')({ stage: 0 })],
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-image',
     {
