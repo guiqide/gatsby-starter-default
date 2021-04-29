@@ -6342,13 +6342,13 @@
     "lodash" "^4.17.21"
     "webpack-assets-manifest" "^5.0.1"
 
-"gatsby-plugin-google-analytics@^3.3.0":
-  "integrity" "sha512-p6++DY9fJ8Exh2YpPdaL17mtvcd1uPGfIJPf6683CJtlzfqGRbN97ue2BKl/RfsBpXuK01hIXOiY/sOgDaE9vg=="
-  "resolved" "https://registry.npmjs.org/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-3.3.0.tgz"
-  "version" "3.3.0"
+"gatsby-plugin-google-gtag@^3.4.0":
+  "integrity" "sha512-pIzTY+mVzb/JcStLgvhzmr9kmdN8sz6LnTTXOFzvr8sTZ9WXnwWUqJqjZxaEeGYznJHItu4KP8VWg6RRpUDoBg=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-3.4.0.tgz"
+  "version" "3.4.0"
   dependencies:
     "@babel/runtime" "^7.12.5"
-    "minimatch" "3.0.4"
+    "minimatch" "^3.0.4"
 
 "gatsby-plugin-image@^1.2.1":
   "integrity" "sha512-ZSXBOFSYfbXGWxwc4JkFCoBMZjWLkj8vWkJ9Fu+4Gh5C4KdzveKTDJ0ypBJZU12z5qW+srnMDXVI2Ym+zL57Vw=="
