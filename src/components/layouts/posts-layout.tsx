@@ -1,5 +1,11 @@
 import React, { FC, ReactNode } from 'react';
+import { MDXProvider } from '@mdx-js/react';
+import { Link } from 'gatsby';
 import DefaultLayout from './default';
+
+const shortcodes = {
+  Link,
+};
 // import styles from './index.module.less';
 export interface PostsLayoutProps {
   children: ReactNode
@@ -9,7 +15,7 @@ const PostsLayout: FC<PostsLayoutProps> = ({ children }: PostsLayoutProps) => {
   return (
     <DefaultLayout>
       <section>
-        {children}
+        <MDXProvider components={shortcodes}>{children}</MDXProvider>
       </section>
     </DefaultLayout>
   );

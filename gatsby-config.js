@@ -41,13 +41,13 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'posts',
-        path: `${__dirname}/src/blogs/`,
+        path: `${__dirname}/src/blogs`,
       },
     },
     {
       resolve: 'gatsby-plugin-page-creator',
       options: {
-        path: `${__dirname}/src/blogs/`,
+        path: `${__dirname}/src/blogs`,
       },
     },
     {
@@ -76,6 +76,7 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-catch-links',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -86,6 +87,13 @@ module.exports = {
         theme_color: '#663399',
         display: 'minimal-ui',
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+      },
+    },
+    'gatsby-transformer-yaml',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: './src/configs/',
       },
     },
     'gatsby-plugin-gatsby-cloud',

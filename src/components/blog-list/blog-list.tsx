@@ -1,11 +1,9 @@
 import React, { FC } from 'react';
+import { Link } from 'gatsby';
 // import styles from './index.module.less';
 interface BlogFile {
-  node: {
-    id: string
-    name: string
-    absolutePath: string
-  }
+  name: string
+  url: string
 }
 export interface BlogListProps {
   list?: BlogFile[]
@@ -13,7 +11,9 @@ export interface BlogListProps {
 const BlogList: FC<BlogListProps> = ({ list }: BlogListProps) => (
   <ul>
     {list && list.map((item) => (
-      <li key={item.node.id}>{item.node.name}</li>
+      <li key={item.name}>
+        <Link to={item.url}>{item.name}</Link>
+      </li>
     ))}
   </ul>
 );

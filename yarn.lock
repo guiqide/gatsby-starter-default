@@ -1905,6 +1905,13 @@
   dependencies:
     "@types/unist" "*"
 
+"@types/mdx-js__react@^1.5.3":
+  "integrity" "sha512-flP0BpS5rXnEbkU5ih79ARaI/+rK10Iee+zxTaWYtoiyc2+f1EJ8EnYgMmXHdAuI7OX4J9/hdoXfrfrri0AT+Q=="
+  "resolved" "https://registry.npmjs.org/@types/mdx-js__react/-/mdx-js__react-1.5.3.tgz"
+  "version" "1.5.3"
+  dependencies:
+    "@types/react" "*"
+
 "@types/minimatch@*":
   "integrity" "sha512-1z8k4wzFnNjVK/tlxvrWuK5WMt6mydWWP7+zvH5eFep4oj+UkrfiJTRtjCeBXNpwaA/FYqqtb4/QS4ianFpIRA=="
   "resolved" "https://registry.npmjs.org/@types/minimatch/-/minimatch-3.0.4.tgz"
@@ -4235,6 +4242,11 @@
     "domutils" "1.5.1"
     "nth-check" "~1.0.1"
 
+"css-selector-parser@^1.1.0":
+  "integrity" "sha512-HYPSb7y/Z7BNDCOrakL4raGO2zltZkbeXyAd6Tg9obzix6QhzxCotdBl6VT0Dv4vZfJGVz3WL/xaEI9Ly3ul0g=="
+  "resolved" "https://registry.npmjs.org/css-selector-parser/-/css-selector-parser-1.4.1.tgz"
+  "version" "1.4.1"
+
 "css-to-react-native@^3.0.0":
   "integrity" "sha512-Ro1yETZA813eoyUp2GDBhG2j+YggidUmzO1/v9eYBKR2EHVEniE2MI/NqpTQ954BMpTPZFsGNPm46qFB9dpaPQ=="
   "resolved" "https://registry.npmjs.org/css-to-react-native/-/css-to-react-native-3.0.0.tgz"
@@ -6314,6 +6326,14 @@
   dependencies:
     "@babel/runtime" "^7.2.0"
 
+"gatsby-plugin-catch-links@^3.4.0":
+  "integrity" "sha512-vYjlTdPlHIRsCzsCokCQ+cOnOlmn2xi87h2f59nZ7pl3gCKG/dTz4XOAjj6+5hpn/tPuf2ulU/LgJv35rkAi0g=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-catch-links/-/gatsby-plugin-catch-links-3.4.0.tgz"
+  "version" "3.4.0"
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "escape-string-regexp" "^1.0.5"
+
 "gatsby-plugin-eslint@^3.0.0":
   "integrity" "sha512-nvyLz067k8lmhWIalhgFCzlNIjHIabYPZXpARM0k4AGRJWOPgOxc5P0T+G/TjCvtSg4+jtKotbE5ranMbxIBiw=="
   "resolved" "https://registry.npmjs.org/gatsby-plugin-eslint/-/gatsby-plugin-eslint-3.0.0.tgz"
@@ -6634,6 +6654,16 @@
     "probe-image-size" "^6.0.0"
     "semver" "^7.3.4"
     "sharp" "^0.28.0"
+
+"gatsby-transformer-yaml@^3.4.0":
+  "integrity" "sha512-rUohmX0UALxsYs/v3eEu8vrn9O8CnMUF+7oskpWqVZnOHAt/pEIIver3BVY3xJnQExCTSAsuhIhx7oIuvRVn2w=="
+  "resolved" "https://registry.npmjs.org/gatsby-transformer-yaml/-/gatsby-transformer-yaml-3.4.0.tgz"
+  "version" "3.4.0"
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "js-yaml" "^3.14.1"
+    "lodash" "^4.17.21"
+    "unist-util-select" "^1.5.0"
 
 "gatsby@^3.0.0-next.0", "gatsby@^3.3.1", "gatsby@>=2", "gatsby@>2.0.0":
   "integrity" "sha512-Eprejb4317ZYFZXYdXErYGcOZuscXIln5v0JTPFbXtejrM+MMr7qa3GF8NztyOH3alpqAMXm6LyHDMf9oQpLSA=="
@@ -8513,7 +8543,7 @@
   "resolved" "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz"
   "version" "4.0.0"
 
-"js-yaml@^3.13.1":
+"js-yaml@^3.13.1", "js-yaml@^3.14.1":
   "integrity" "sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g=="
   "resolved" "https://registry.npmjs.org/js-yaml/-/js-yaml-3.14.1.tgz"
   "version" "3.14.1"
@@ -9921,6 +9951,13 @@
     "console-control-strings" "~1.1.0"
     "gauge" "~2.7.3"
     "set-blocking" "~2.0.0"
+
+"nth-check@^1.0.1":
+  "integrity" "sha512-WeBOdju8SnzPN5vTUJYxYUxLeXpCaVP5i5e0LF8fg7WORF2Wd7wFX/pk0tYZk7s8T+J7VLy0Da6J1+wCT0AtHg=="
+  "resolved" "https://registry.npmjs.org/nth-check/-/nth-check-1.0.2.tgz"
+  "version" "1.0.2"
+  dependencies:
+    "boolbase" "~1.0.0"
 
 "nth-check@^1.0.2":
   "integrity" "sha512-WeBOdju8SnzPN5vTUJYxYUxLeXpCaVP5i5e0LF8fg7WORF2Wd7wFX/pk0tYZk7s8T+J7VLy0Da6J1+wCT0AtHg=="
@@ -14263,6 +14300,15 @@
   "version" "2.1.0"
   dependencies:
     "unist-util-is" "^4.0.0"
+
+"unist-util-select@^1.5.0":
+  "integrity" "sha1-qTwr6MD2U4J4A7gTMa3sKqJM2TM="
+  "resolved" "https://registry.npmjs.org/unist-util-select/-/unist-util-select-1.5.0.tgz"
+  "version" "1.5.0"
+  dependencies:
+    "css-selector-parser" "^1.1.0"
+    "debug" "^2.2.0"
+    "nth-check" "^1.0.1"
 
 "unist-util-stringify-position@^1.0.0", "unist-util-stringify-position@^1.1.1":
   "integrity" "sha512-pNCVrk64LZv1kElr0N1wPiHEUoXNVFERp+mlTg/s9R5Lwg87f9bM/3sQB99w+N9D/qnM9ar3+AKDBwo/gm/iQQ=="

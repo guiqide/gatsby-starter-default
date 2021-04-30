@@ -1,0 +1,4 @@
+- name: daily
+  url: post/daily
+- name: hello world
+  url: post/hello world
