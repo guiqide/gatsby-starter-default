@@ -53,6 +53,10 @@ export const query = graphql`
         name
         url
       }
+      pageInfo {
+        currentPage
+      }
+      totalCount
     }
   }
 `;

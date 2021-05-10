@@ -1,4 +1,6 @@
 - name: daily
-  url: post/daily
+  url: post/daily/
 - name: hello world
-  url: post/hello world
+  url: post/hello world/
+- name: 如何替换apollo-client设置的的accept请求属性
+  url: post/replace_accept/
