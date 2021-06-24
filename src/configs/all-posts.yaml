@@ -4,5 +4,5 @@
   url: post/hello world/
 - name: 如何替换apollo-client设置的的accept请求属性
   url: post/replace_accept/
-  - name: nestjs的目录结构定义
+- name: nestjs的目录结构定义
   url: post/new project/
