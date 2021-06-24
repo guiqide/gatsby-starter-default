@@ -2,6 +2,7 @@ import React, { FC, ReactNode } from 'react';
 import { MDXProvider } from '@mdx-js/react';
 import { Link } from 'gatsby';
 import DefaultLayout from './default';
+import * as layout from './layout.module.css';
 
 const shortcodes = {
   Link,
@@ -14,7 +15,7 @@ const PostsLayout: FC<PostsLayoutProps> = ({ children }: PostsLayoutProps) => {
   console.log(PostsLayout);
   return (
     <DefaultLayout>
-      <section>
+      <section className={layout.posts}>
         <MDXProvider components={shortcodes}>{children}</MDXProvider>
       </section>
     </DefaultLayout>

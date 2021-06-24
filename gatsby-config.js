@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'gavin\'s blog',
+    title: 'Gavin Blog',
     description: 'mdx blog with gatsby',
+    avator: 'images/avator.jpg',
     author: '@gavin',
   },
   plugins: [
