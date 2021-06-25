@@ -60,6 +60,7 @@ module.exports = {
         },
       },
     },
+    'gatsby-plugin-sass',
     {
       resolve: 'gatsby-plugin-postcss',
       options: {
@@ -94,7 +95,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: './src/configs/',
+        path: './src/configs',
       },
     },
     'gatsby-plugin-gatsby-cloud',

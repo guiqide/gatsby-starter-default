@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import { Header } from '../index';
 
-import './layout.css';
+import './layout.scss';
 import Footer from '../footer/footer';
 
 interface LayoutProp {

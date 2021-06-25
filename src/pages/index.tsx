@@ -17,27 +17,29 @@ export interface IAllFiles {
 }
 interface IndexProps extends PageProps {
   data: {
-    allAllPostsYaml: IAllPostsYaml
+    allPostYaml: IAllPostsYaml
   }
 }
 
 interface IYamlNode {
-  id: string
-  name: string
-  url: string
+  node: {
+    id: string
+    name: string
+    url: string
+  }
 }
 interface IAllPostsYaml {
-  nodes: IYamlNode[]
+  edges: IYamlNode[]
 }
 const IndexPage: FC<IndexProps> = ({ data }: IndexProps) => {
   console.log('index');
-  console.log(data?.allAllPostsYaml.nodes);
+  console.log(data?.allPostYaml.edges);
 
   return (
     <DefaultLayout>
       <Seo title="首页" />
       <section>
-        <BlogList list={data?.allAllPostsYaml.nodes} />
+        <BlogList list={data?.allPostYaml.edges} />
       </section>
     </DefaultLayout>
   );
@@ -47,16 +49,13 @@ export default IndexPage;
 
 export const query = graphql`
   query BlogsQuery {
-    allAllPostsYaml {
-      nodes {
-        id
-        name
-        url
+    allPostYaml {
+      edges {
+        node {
+          name
+          url
+        }
       }
-      pageInfo {
-        currentPage
-      }
-      totalCount
     }
   }
 `;
