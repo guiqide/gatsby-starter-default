@@ -9,10 +9,12 @@ export const Avator: FC<AvatorProps> = ({ name }: AvatorProps) => {
   console.log(Avator);
   return (
     <div className={styles.container}>
-      <StaticImage
-        src="../../../images/avator.jpg" alt="avator"
-        className={styles.avator}
-      />
+      <div>
+        <StaticImage
+          src="../../../images/avator.jpg" alt="avator"
+          className={styles.avator}
+        />
+      </div>
       <span className={styles.name}>{name}</span>
     </div>
   );

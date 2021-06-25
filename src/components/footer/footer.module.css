@@ -1,5 +1,20 @@
 .container {
+  padding-top: 30px;
   text-align: center;
   color: #fff;
   background-color: #36275d;
+}
+.btnRound {
+  margin: 0 5px;
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 9px 11px;
+  border-color: #fff;
+  border-width: 1px;
+  border-radius: 30px !important;
+  opacity: 0.79;
+}
+
+.credits {
+  padding: 25px 0 15px;
 }
