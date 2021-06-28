@@ -49,11 +49,15 @@ export default IndexPage;
 
 export const query = graphql`
   query BlogsQuery {
-    allPostYaml {
+    allMdx {
       edges {
         node {
-          name
-          url
+          slug
+          id
+          headings(depth: h1) {
+            value
+            depth
+          }
         }
       }
     }

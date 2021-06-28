@@ -1,7 +1,0 @@
-query SiteTitleQuery {
-  site {
-    siteMetadata {
-      title
-    }
-  }
-}
